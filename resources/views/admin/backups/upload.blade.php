@@ -35,7 +35,7 @@
                                     <label for="backup_file" class="flex flex-col items-center justify-center w-full h-32 px-4 transition bg-slate-50 dark:bg-slate-800 border-2 border-slate-200 dark:border-slate-700 border-dashed rounded-3xl hover:bg-slate-100 dark:hover:bg-slate-700 hover:border-[#39A900] dark:hover:border-[#39A900] cursor-pointer group-hover/input:scale-[1.01]">
                                         <div class="flex flex-center items-center gap-3">
                                             <svg class="w-6 h-6 text-slate-400 group-hover:text-[#39A900]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/></svg>
-                                            <span id="file-name" class="text-[10px] font-black uppercase tracking-widest text-slate-500 dark:text-slate-400">Click para seleccionar .sql o .gz</span>
+                                            <span id="file-name" class="text-[10px] font-black uppercase tracking-widest text-slate-500 dark:text-slate-400">Click para seleccionar .sql</span>
                                         </div>
                                     </label>
                                 </div>

@@ -25,4 +25,9 @@ return Application::configure(basePath: dirname(__DIR__))
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         //
-    })->create();
+    })
+    ->withSchedule(function (\Illuminate\Console\Scheduling\Schedule $schedule) {
+        // Backup diario automático (SQL) a las 02:00 AM
+        $schedule->command('system:backup')->dailyAt('02:00');
+    })
+    ->create();

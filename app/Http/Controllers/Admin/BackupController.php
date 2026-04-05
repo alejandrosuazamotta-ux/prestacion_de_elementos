@@ -74,7 +74,7 @@ class BackupController extends Controller
     }
 
     /**
-     * Genera un nuevo backup y lo guarda en el servidor.
+     * Genera un nuevo backup SQL.
      */
     public function create()
     {

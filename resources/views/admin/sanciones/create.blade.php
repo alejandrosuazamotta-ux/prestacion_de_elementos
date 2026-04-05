@@ -19,7 +19,7 @@
                         <div class="grid grid-cols-1 gap-8">
                             <div class="space-y-2">
                                 <label for="user_id" class="block text-[10px] font-black uppercase tracking-[0.2em] text-slate-700 dark:text-slate-300 ml-1">Usuario Sena a Sancionar</label>
-                                <select name="user_id" id="user_id" class="w-full bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 rounded-2xl shadow-sm focus:ring-rose-500 focus:border-rose-500 text-sm font-bold text-slate-800 dark:text-white transition-all py-3 px-4" required>
+                                <select name="user_id" id="user_id" class="w-full bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 rounded-2xl shadow-sm focus:ring-amber-500 focus:border-amber-500 text-sm font-bold text-slate-800 dark:text-white transition-all py-3 px-4" required>
                                     <option value="" class="dark:bg-slate-900">Seleccione un usuario...</option>
                                     @foreach($usuarios as $usuario)
                                         <option value="{{ $usuario->id }}" class="dark:bg-slate-900">{{ $usuario->name }} ({{ $usuario->documento }})</option>
@@ -29,17 +29,17 @@
 
                             <div class="space-y-2">
                                 <label for="motivo" class="block text-[10px] font-black uppercase tracking-[0.2em] text-slate-700 dark:text-slate-300 ml-1">Motivo Detallado</label>
-                                <textarea id="motivo" name="motivo" class="w-full bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 rounded-2xl shadow-sm focus:ring-rose-500 focus:border-rose-500 text-sm font-bold text-slate-800 dark:text-white transition-all py-3 px-4" rows="4" required placeholder="Ej: No entregó el portátil en la fecha acordada o presenta daños..."></textarea>
+                                <textarea id="motivo" name="motivo" class="w-full bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 rounded-2xl shadow-sm focus:ring-amber-500 focus:border-amber-500 text-sm font-bold text-slate-800 dark:text-white transition-all py-3 px-4" rows="4" required placeholder="Ej: No entregó el portátil en la fecha acordada o presenta daños..."></textarea>
                             </div>
 
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div class="space-y-2">
                                     <label for="fecha_inicio" class="block text-[10px] font-black uppercase tracking-[0.2em] text-slate-700 dark:text-slate-300 ml-1">Fecha de Inicio</label>
-                                    <input id="fecha_inicio" type="date" name="fecha_inicio" class="w-full bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 rounded-2xl shadow-sm focus:ring-rose-500 focus:border-rose-500 text-sm font-bold text-slate-800 dark:text-white transition-all py-3 px-4" required value="{{ date('Y-m-d') }}" />
+                                    <input id="fecha_inicio" type="date" name="fecha_inicio" class="w-full bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 rounded-2xl shadow-sm focus:ring-amber-500 focus:border-amber-500 text-sm font-bold text-slate-800 dark:text-white transition-all py-3 px-4" required value="{{ date('Y-m-d') }}" />
                                 </div>
                                 <div class="space-y-2">
                                     <label for="fecha_fin" class="block text-[10px] font-black uppercase tracking-[0.2em] text-slate-700 dark:text-slate-300 ml-1">Fecha de Expiración</label>
-                                    <input id="fecha_fin" type="date" name="fecha_fin" class="w-full bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 rounded-2xl shadow-sm focus:ring-rose-500 focus:border-rose-500 text-sm font-bold text-slate-800 dark:text-white transition-all py-3 px-4" required />
+                                    <input id="fecha_fin" type="date" name="fecha_fin" class="w-full bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 rounded-2xl shadow-sm focus:ring-amber-500 focus:border-amber-500 text-sm font-bold text-slate-800 dark:text-white transition-all py-3 px-4" required />
                                 </div>
                             </div>
                         </div>
